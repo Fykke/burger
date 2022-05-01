@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BURGER</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: grid;
+            place-items: center;
+            min-height: 100vh;
+            animation: bg 2s alternate infinite;
+        }
+
+        .hamburger {
+            width: 60vw;
+            margin-top: 15px;
+            padding-bottom: 5px;
+        }
+
+        .seed {
+            fill: rgb(255, 255, 255);
+            opacity: .8;
+        }
+
+        .lettuce:hover, .seeds:hover, .cheese:hover, .ketchup:hover, .cola:hover {
+            opacity: .6;
+        }
+
+        h1 {
+            font-size: 4rem;
+            color: white;
+        }
+
+        p {
+            color: white;
+            text-align: center;
+            margin-bottom: 5px;
+            font-size: 2.5rem;
+        }
+
+        .toppings {
+            margin-top: 0;
+            font-size: 2.5rem;
+        }
+
+        button {
+            font-size:24px;
+            padding: 1em;
+            background: none;
+            text-shadow: 0 0 .125em hsl(0 0% 100% / 0.5), 0 0 0.45em currentColor;
+            border: rgb(43, 167, 6) 2px solid;
+            color: rgb(43, 167, 6);
+            border-radius: 10px;
+            box-shadow: 0px 0px 35px 1px rgb(43, 167, 6), 0px 0px 20px 3px inset;
+            min-width: 150px;
+            margin: 1px;
+        }
+
+        button:hover {
+            border: none !important;
+            box-shadow: 0px 0px 35px 1px rgb(248, 248, 248), 0px 0px 20px 3px rgb(248, 248, 248) inset !important;
+        }
+
+        button:active {
+            background-color: rgba(226, 226, 226, .1) !important; 
+            color: rgba(255, 255, 255, 0.432) !important;
+        }
+
+        @keyframes bg {
+            from {
+                background: #2b1f1f;
+            }
+            to {
+                background: #1a1925;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Customise your BURGER</h1>
+    <svg class="hamburger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256.44 127.09"><g class="patty"><rect class="patty_burger" x="18.81" y="76.67" width="232.61" height="31.99" rx="3.96" fill="#573300"/></g><g class="cheese"><path class="cheese_drips" d="M251.44 80.82a4.1 4.1 0 0 0-.18-1.18 3.88 3.88 0 0 0-3.94-3h-82.28a3.22 3.22 0 0 0-3.57 0h-39.26a3.18 3.18 0 0 0-2.33-1 3.22 3.22 0 0 0-2.34 1h-89.3a3.23 3.23 0 0 0-2.8-1.63 3.19 3.19 0 0 0-2.8 1.66 3.9 3.9 0 0 0-3.84 4v14.5a2.32 2.32 0 0 0 1.23.31 2.71 2.71 0 0 0 2.72-2.71v-1.91a2.71 2.71 0 0 0 2.16-2.66v-1.65a3 3 0 0 0 .51.06 3.22 3.22 0 0 0 2.82-1.6h5.41v1.93a3.23 3.23 0 1 0 6.46 0v-1.93h8.33v4.25a3.22 3.22 0 0 0 6.39.61 2.83 2.83 0 0 0 .14-.83v-4h30.11v1.22a3.23 3.23 0 0 0 2.72 3.18v3.83a3.23 3.23 0 0 0 6.45 0v-3.74a3.2 3.2 0 0 0 1.29-2.56v-1.96h21.26a3.21 3.21 0 0 0 6.15 0h18.28v4.89a3.23 3.23 0 1 0 6.46 0v-4.89h12.38a3.23 3.23 0 0 0 2.16 2.59v1.66a3.23 3.23 0 1 0 6.46 0v-4.25h21.75a3.23 3.23 0 0 0-.15.93v5.19a3.23 3.23 0 1 0 6.46 0v-2.75a3.21 3.21 0 0 0 2.29-3.07v-.3h15v.3a3.23 3.23 0 1 0 6.45 0v-.3h13.76v5.36a3.23 3.23 0 1 0 6.45 0v-5.19a1.11 1.11 0 0 0 0-.17h5.33v.67a3.24 3.24 0 0 0 5.41 2.33V80.82Z" fill="#e59f00"/></g><g class="ketchup"><path class="ketchup_drip" d="M37.16 64.5a1.73 1.73 0 0 0-1.72 1.41 1.72 1.72 0 0 0-1.72 1.72v11.84a1.72 1.72 0 1 0 3.44 0V77.8a1.72 1.72 0 0 0 1.72-1.72v-9.86a1.72 1.72 0 0 0-1.72-1.72Z" fill="#bd441e"/><path class="ketchup_drip" data-name="ketchup_drip" d="M57.55 65.07a1.68 1.68 0 0 0-.94.28v-1.84a1.73 1.73 0 0 0-3.45 0v9.86a1.73 1.73 0 0 0 2.67 1.44v1.84a1.72 1.72 0 0 0 3.44 0v-9.86a1.72 1.72 0 0 0-1.72-1.72ZM66.61 66.06a1.73 1.73 0 0 0-1.73 1.72v3.94a1.72 1.72 0 0 0-1.72 1.72v9.86a1.73 1.73 0 0 0 3.45 0v-3.94a1.72 1.72 0 0 0 1.72-1.72v-9.86a1.72 1.72 0 0 0-1.72-1.72ZM102.24 70.31a1.73 1.73 0 0 0-1.73 1.7v1.67a1.72 1.72 0 0 0-1.72 1.72v9.86a1.73 1.73 0 1 0 3.45 0v-1.65a1.72 1.72 0 0 0 1.72-1.72v-9.88a1.72 1.72 0 0 0-1.72-1.7ZM115.18 73.7a1.72 1.72 0 0 0-1.74 1.72v9.86a1.72 1.72 0 1 0 3.44 0v-9.86a1.72 1.72 0 0 0-1.7-1.72ZM130.44 75.01a1.72 1.72 0 0 0-1.72 1.72v11.82a1.72 1.72 0 0 0 3.44 0V76.72a1.72 1.72 0 0 0-1.72-1.71ZM153.59 75.25a1.72 1.72 0 0 0-1.72 1.76v-3.57a1.73 1.73 0 0 0-1.73-1.72 1.72 1.72 0 0 0-1.7 1.72v9.86a1.72 1.72 0 0 0 1.7 1.71v4.93a1.73 1.73 0 1 0 3.45 0v-1.4a1.72 1.72 0 0 0 1.72-1.72v-9.81a1.72 1.72 0 0 0-1.72-1.76ZM181.35 75.56v-2.12a1.73 1.73 0 0 0-3.45 0v9.86a1.76 1.76 0 0 0 .74 1.42v2.11a1.73 1.73 0 0 0 3.45 0v-9.82a1.72 1.72 0 0 0-.74-1.45ZM210.83 75.25a1.72 1.72 0 0 0-1.72 1.76v9.86a1.72 1.72 0 0 0 3.44 0v-9.86a1.72 1.72 0 0 0-1.72-1.76Z" fill="#bd441e"/><rect class="ketchup_drip" data-name="ketchup_drip" x="239.93" y="65.07" width="3.44" height="13.3" rx="1.72" fill="#bd441e"/><path class="ketchup_drip" data-name="ketchup_drip" d="M231.07 66.19v-2.53a1.72 1.72 0 0 0-3.44 0v9.86a1.71 1.71 0 0 0 1.09 1.6v2.53a1.72 1.72 0 0 0 3.44 0v-9.86a1.72 1.72 0 0 0-1.09-1.6Z" fill="#bd441e"/></g><g class="lettuce"><path class="lettuce_pieces" d="M253.88 75.34h-49.72a2.64 2.64 0 0 1-1.44 0H163.5a2.65 2.65 0 0 0-.5 0 2.83 2.83 0 0 0-.5 0h-39.23a2.65 2.65 0 0 0-2.2 1.1h-17.69a2.6 2.6 0 0 0-.4 0h-3a2.63 2.63 0 0 0-2.22-1.13H19.88a2.22 2.22 0 1 0 0 4.38h21.19a2.64 2.64 0 0 0 2.2 1.09h7a2.12 2.12 0 0 0-.09.57 2.39 2.39 0 0 0 2.55 2.19h6.46a2.52 2.52 0 0 0 2.42-1.53h.47a2.6 2.6 0 0 0 2.26-1.2h17.68a2.64 2.64 0 0 0 2.2 1.1h39.22a2.65 2.65 0 0 0 2.2-1.1h17a2.64 2.64 0 0 0 2.2-1.09h16.1a2.39 2.39 0 0 0 2.56 2.19h39.22a2.85 2.85 0 0 0 1.65-.53H219a2.75 2.75 0 0 0 1.69-.57h33.19a2.39 2.39 0 0 0 2.56-2.18v-1.1a2.39 2.39 0 0 0-2.56-2.19Z" fill="#5fb130"/></g><g class="bun"><path class="bun-bottom" d="M21.61 108.65h227.64v5.93a10.09 10.09 0 0 1-10.09 10.09H31.7a10.09 10.09 0 0 1-10.09-10.09v-5.93Z" fill="#f2ca8a"/><path class="bun-top" d="M135.44 34.89c-62.86 0-113.82 18.7-113.82 41.77h227.62c0-23.07-50.96-41.77-113.8-41.77Z" fill="#f2ca8a"/></g><g class="seeds"><path class="seed" d="M66.8 53.57c-2 0-3.64.69-3.64 1.55s1.63 1.56 3.64 1.56 3.64-.67 3.64-1.56-1.63-1.55-3.64-1.55Z" fill="#f7e4a6"/><path class="seed" data-name="seed" d="M86.16 48.7c0-.86-1.63-1.55-3.64-1.55s-3.64.69-3.64 1.55 1.63 1.56 3.64 1.56 3.64-.7 3.64-1.56ZM107.6 62.1c-2 0-3.64.7-3.64 1.56s1.63 1.55 3.64 1.55 3.64-.7 3.64-1.55-1.63-1.56-3.64-1.56ZM156.66 68.57c-2 0-3.64.69-3.64 1.55s1.63 1.56 3.64 1.56 3.64-.7 3.64-1.56-1.63-1.55-3.64-1.55ZM138.75 47.15c-2 0-3.64.69-3.64 1.55s1.63 1.56 3.64 1.56 3.64-.7 3.64-1.56-1.63-1.55-3.64-1.55ZM171.33 48.7c-2 0-3.64.7-3.64 1.56s1.63 1.55 3.64 1.55 3.64-.69 3.64-1.55-1.63-1.56-3.64-1.56ZM204.44 63.66c-2 0-3.64.69-3.64 1.55s1.64 1.56 3.64 1.56 3.64-.7 3.64-1.56-1.64-1.55-3.64-1.55ZM43.77 67.01c-2 0-3.64.7-3.64 1.56s1.63 1.55 3.64 1.55 3.67-.7 3.67-1.55-1.66-1.56-3.67-1.56ZM202.52 52.21c0-.86-1.63-1.56-3.64-1.56s-3.63.7-3.63 1.56 1.62 1.55 3.63 1.55 3.64-.7 3.64-1.55ZM83.55 67.01c-2 0-3.64.7-3.64 1.56s1.63 1.55 3.64 1.55 3.64-.7 3.64-1.55-1.63-1.56-3.64-1.56ZM229.89 67.01c-2 0-3.64.7-3.64 1.56s1.63 1.55 3.64 1.55 3.64-.7 3.64-1.55-1.63-1.56-3.64-1.56ZM136.88 62.1c-2 0-3.63.7-3.63 1.56s1.62 1.55 3.63 1.55 3.64-.7 3.64-1.55-1.63-1.56-3.64-1.56ZM113.44 47.15c-2 0-3.64.69-3.64 1.55s1.64 1.56 3.64 1.56 3.64-.7 3.64-1.56-1.64-1.55-3.64-1.55ZM181.54 67.55c-2 0-3.64.69-3.64 1.55s1.63 1.56 3.64 1.56 3.64-.7 3.64-1.56-1.63-1.55-3.64-1.55Z" fill="#f7e4a6"/></g><g class="cola"><path class="pipe" fill="#cac9c9" d="m56.465-.001 7.65 1.418L49.85 78.376l-7.65-1.418z"/><path class="glass" d="M60.38 127.08H15.56L.08 26.23a5.92 5.92 0 0 1 5.91-5.91h60.62a5.91 5.91 0 0 1 5.91 5.91Z" fill="#e73e2e"/><path class="frame" d="M66.67 20.32H5.92A5.92 5.92 0 0 0 0 26.23l.13.89h72.36l.1-.89a5.92 5.92 0 0 0-5.92-5.91Z" fill="#d3d3d3"/></g></svg>
+    <p>What parts do you want?</p>
+    <div class="toppings">
+        <button id="seeds_button" onclick="disable('.seeds', 'seeds_button');">Seeds</button>
+        <button id="lettuce_button" onclick="disable('.lettuce', 'lettuce_button');">Lettuce</button>
+        <button id="ketchup_button" onclick="disable('.ketchup', 'ketchup_button');">Ketchup</button>
+        <button id="cheese_button" onclick="disable('.cheese', 'cheese_button');">Cheese</button>
+        <button id="cola_button" onclick="disable('.cola', 'cola_button');">Cola</button>
+        <button id="pipe_button" onclick="disable('.pipe', 'pipe_button');">Pipe</button>
+    </div>
+    <script>
+    function disable(name, id) {
+        if (document.querySelector(String(name)).style.display == "none") {
+            document.querySelector(String(name)).style.display = "block"
+            document.getElementById(id).style.boxShadow = '0px 0px 35px 1px rgb(43, 167, 6), 0px 0px 20px 3px inset rgb(43, 167, 6)';
+            document.getElementById(id).style.border = 'rgb(43, 167, 6) 2px solid';
+            document.getElementById(id).style.color = 'rgb(43, 167, 6)';
+        }
+        else {
+            document.querySelector(String(name)).style.display = "none"
+            document.getElementById(id).style.boxShadow = '0px 0px 35px 1px rgb(255, 43, 28), 0px 0px 20px 3px inset rgb(255, 43, 28)';
+            document.getElementById(id).style.border = 'rgb(255, 43, 28) 2px solid';
+            document.getElementById(id).style.color = 'rgb(255, 43, 28)';
+        }
+    }
+    </script>
+</body>
+</html>

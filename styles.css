@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    animation: bg 2s alternate infinite;
+}
+
+.hamburger {
+    width: 60vw;
+    margin-top: 15px;
+    padding-bottom: 5px;
+}
+
+.seed {
+    fill: rgb(255, 255, 255);
+    opacity: .8;
+}
+
+.lettuce:hover, .seeds:hover, .cheese:hover, .ketchup:hover, .cola:hover {
+    opacity: .6;
+}
+
+h1 {
+    font-size: 4rem;
+    color: white;
+}
+
+p {
+    color: white;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 2.5rem;
+}
+
+.toppings {
+    margin-top: 0;
+    font-size: 2.5rem;
+}
+
+button {
+    font-size:24px;
+    padding: 1em;
+    background: none;
+    border: rgb(43, 167, 6) 2px solid;
+    text-shadow: 0 0 .125em hsl(0 0% 100% / 0.5), 0 0 0.45em currentColor;
+    color: rgb(43, 167, 6);
+    border-radius: 10px;
+    box-shadow: 0px 0px 35px 1px rgb(43, 167, 6), 0px 0px 20px 3px inset;
+    min-width: 150px;
+    margin: 1px;
+}
+
+button:hover {
+    border: none !important;
+    box-shadow: 0px 0px 35px 1px rgb(248, 248, 248), 0px 0px 20px 3px rgb(248, 248, 248) inset !important;
+}
+
+button:active {
+    background-color: rgba(226, 226, 226, .1) !important; 
+    color: rgba(255, 255, 255, 0.432) !important;
+}
+
+@keyframes bg {
+    from {
+        background: #2b1f1f;
+    }
+    to {
+        background: #1a1925;
+    }
+}
